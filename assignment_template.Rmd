@@ -1,0 +1,132 @@
+---
+title: "**Homework assignment title.**"
+date: "Last compiled on: `r format(Sys.time(), '%d/%m/%Y, %H:%M:%S')`."
+authors:
+  - name: Paco de Lucía
+    address: 778899
+  - name: Baby Yoda
+    address: 774455
+  - name: Chick Corea
+    address: 884422
+  - name: An alternative for big teams - Chick Corea (884422), Baby Yoda (774455), Paco de Lucía (778899), Suzanne Ciani (365411), Alan Turing (312511) and others. 
+abstract: |
+  Summary of main findings and conclusions. Optional section.
+keywords:
+  - quantitative finance
+  - financial risk
+  - financial modeling in R
+  - Optional section.
+fontsize: 12pt
+urlcolor: blue
+spacing: halfline
+bibliography: mybibfile.bib
+output: rticles::oup_article
+link-citations: yes
+citation_package: natbib
+---
+
+```{=tex}
+\hypersetup{linkcolor=blue}
+```
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE) # By default, show code; set to FALSE to hide it
+knitr::opts_chunk$set(fig.pos = 'H') # Places figures on pages separate from text
+knitr::opts_chunk$set(out.width = '100%', dpi=300) # Figure resolution and size
+knitr::opts_chunk$set(fig.env = "figure") # Latex figure environment
+```
+
+# Introduction.
+
+*Look how you can add web links in the following sentence*. This template is based on the generic OUP template available [here](https://academic.oup.com/icesjms/pages/General_Instructions). **Now, look how you can add a different font**. This is useful for \texttt{file} or \texttt{function names}. The original OUP sample tex document, providing more details on preferred formatting for LaTeX documents, is included with the template in the file `ouparticle_sample.tex`.
+
+Here are some sample references. *Reference in brackets as in a list.* Please see [@Hull; @carhart1997persistence] for a full discussion of multi-factor models. Bibliography will appear at the end of the document. *Second, without brackets, separated by a comma.* See @Hull, @Hull2, @cochrane2009asset for a formal demonstration of analytical results, and [@carhart1997persistence; @cochrane1996cross] for some empirical results.
+
+# Methodology.
+
+An equation with a label for cross-referencing:
+
+```{=tex}
+\begin{equation}\label{eq:eq1}
+\int^{r_2}_0 F(r,\varphi){\rm d}r\,{\rm d}\varphi = [\sigma r_2/(2\mu_0)]
+\int^{\infty}_0\exp(-\lambda|z_j-z_i|)\lambda^{-1}J_1 (\lambda r_2)J_0
+(\lambda r_i\,\lambda {\rm d}\lambda)
+\end{equation}
+```
+This equation can be referenced as follows: Eq. \ref{eq:eq1}. Now a simpler equation:
+
+```{=tex}
+\begin{equation}\label{eq:eq2}
+w=\sum^{20}_{i=1}[1/n^i]
+\end{equation}
+```
+
+This equation can be referenced as Eq. \ref{eq:eq2}.
+
+We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n^i]$.
+
+## A subsection.
+
+A numbered list:
+
+1)  First numbered point
+
+2)  Second numbered point
+
+    -   Subpoint
+
+A bullet list:
+
+-   First point
+-   Second point
+
+# Results.
+
+## Generate a figure.
+
+```{r fig1, fig.cap = "This is the first figure.", echo = TRUE}
+plot(1:10, main = "Some data", xlab = "Distance (cm)", 
+     ylab = "Time (hours)")
+```
+
+You can reference this figure as follows: Fig. \ref{fig:fig1}.
+
+```{r fig2, fig.cap="This is the second figure.",echo=TRUE}
+plot(1:5, pch = 19, main = "Some data", xlab = "Distance (cm)", 
+     ylab = "Time (hours)")
+```
+
+Reference to second figure: Fig. \ref{fig:fig2}
+
+## Generate a table using `xtable`.
+
+```{r tab1, results="asis", echo=TRUE}
+df = data.frame(ID = 1:3, code = letters[1:3])
+
+# Creates tables that follow OUP guidelines using xtable
+library(xtable) 
+print(xtable(df, caption = "This is the table caption", 
+             label = "tab:tab1"), comment = FALSE)
+```
+
+You can reference this table as follows: Table \ref{tab:tab1}.
+
+## Generate a table using `kable`.
+
+```{r anothertable, echo=TRUE}
+df = data.frame(ID = 1:3, code = letters[1:3])
+
+# kable can alse be used for creating tables
+knitr::kable(df, caption = "This is the table caption", format = "latex",
+             booktabs = TRUE, label = "tab2")
+```
+
+You can reference this table as follows: Table \ref{tab:tab2}.
+
+# Conclusion.
+
+You can cross-reference sections and subsections as follows: Section \ref{methodology.} and Section \ref{a-subsection.}.
+
+***Note:*** the last section in the document will be used as the section title for the bibliography.
+
+# References.
