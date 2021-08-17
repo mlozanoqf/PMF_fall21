@@ -125,7 +125,7 @@ You can reference this table as follows: Table \ref{tab:tab2}.
 
 # Nombres de los alumnos de PMF (fall 2021).
 
-## Grupo 3pm.
+## Grupo 3:00pm.
 
 Diana Jacquelinne Soto Alcaraz
 
@@ -190,7 +190,7 @@ Allan Alvarado Lozano
 Lara Hanna Weitgasser 
 
 
-## Grupo 6pm.
+## Grupo 6:00pm.
 
 Juan Andrés Castro Moreno
 
