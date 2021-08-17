@@ -12,7 +12,7 @@ authors:
 abstract: |
   Summary of main findings and conclusions. Optional section.
 keywords:
-  - quantitative finance
+  - Optional section. quantitative finance
   - financial risk
   - financial modeling in R
   - Optional section.
@@ -122,6 +122,132 @@ knitr::kable(df, caption = "This is the table caption", format = "latex",
 ```
 
 You can reference this table as follows: Table \ref{tab:tab2}.
+
+# Nombres de los alumnos de PMF (fall 2021).
+
+## Grupo 3pm.
+
+Diana Jacquelinne Soto Alcaraz
+
+Juan Pablo Almada Burr
+
+Bernardo Amador Padilla
+
+Christian Contreras Hernández
+
+Melanie Flores García
+
+Luis Fernando Rodríguez Parra
+
+Diego Valdés Contreras
+
+María Fernanda Rendón Muro
+
+Eugenio Murillo Nader
+
+Adriana Beatriz Santos Monterroza
+
+Oscar David Cortés Gutiérrez
+
+Pompilio Rainiero Amador Sandoval
+
+José Gonzalo Morones Intriago
+
+Andrea Newell Jasso
+
+María Julia Romero Rico
+
+Claudia Michelle de los Ríos Arellano
+
+Salvador Adrián Sánchez Macías
+
+Enrique Gallegos Pateiro
+
+César Alejandro Marroquín Garibay
+
+Natalia Azcárraga Kuri
+
+Cecilia Reyes Villarreal
+
+Ricardo Díaz Ceballos Corral
+
+Medardo Chávez Aguilar
+
+Sofía Aitana Salcedo Martínez
+
+Karina Albarrán Herrera
+
+César Jacob Linares Murguia
+
+Edgar Fernández Reynaga
+
+Marianne Obele Coll
+
+Emilio Noriega González
+
+Allan Alvarado Lozano
+
+Lara Hanna Weitgasser 
+
+
+## Grupo 6pm.
+
+Juan Andrés Castro Moreno
+
+Manuel Alejandro Manríquez Quezada
+
+Juan Carlos Bocanegra Rivera
+
+Alejandro Adolfo Pastor Lara
+
+Adalberto Vladimir Palomares Ramos
+
+Diana Angélica Sandoval Ramírez
+
+Luis Daniel Puente Flores
+
+José Ramón Santos Buhl
+
+Raúl Antonio Valdez Lozano
+
+Jesús Oscar López Mendoza
+
+Eduardo Cuesy Saldaña
+
+Héctor Alejandro Faz Zepeda
+
+Adriana Sofía Salcido Berumen
+
+Luis Arturo Payán Quiñones
+
+Daniela Pizano Chávez
+
+David Armando Placencia Aguilar
+
+Marco Francisco Beltrán Soto
+
+Román Muñoz Loza
+
+Oscar Ventura Montaño
+
+Manuel Eduardo Romero Jara
+
+Juan Francisco Marcial Posas
+
+Jorge Andrés Ángeles Luévano
+
+Andrés Amílkar Yáñez Frías
+
+Nicolai Reiners 
+
+Félix Muñoz Rodríguez
+
+David Villard Linares
+
+Álvaro Rubio Pina
+
+Eyleen Lizeth López Cueva
+
 
 # Conclusion.
 
