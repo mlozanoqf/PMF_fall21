@@ -249,6 +249,19 @@ David Villard Linares
 Eyleen Lizeth López Cueva-Saludos desde Perú
 
 
+## Task.
+
+Use R code to numerically demonstrate whether the following equation is true:
+
+```{=tex}
+\begin{equation}\label{eq:eq3}
+ln(e)+(sin^2x+cos^2x) > \sum^{\infty}_{n=0}1/2^n
+\end{equation}
+```
+
+Write your R code and results here, below the equation \ref{eq:eq3} and before the conclusion. Please include your name.
+
+
 # Conclusion.
 
 You can cross-reference sections and subsections as follows: Section \ref{methodology.} and Section \ref{a-subsection.}.
