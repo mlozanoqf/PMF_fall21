@@ -269,3 +269,5 @@ You can cross-reference sections and subsections as follows: Section \ref{method
 ***Note:*** the last section in the document will be used as the section title for the bibliography.
 
 # References.
+
+*.html
