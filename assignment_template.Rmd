@@ -127,7 +127,7 @@ You can reference this table as follows: Table \ref{tab:tab2}.
 
 ## Grupo 3:00pm.
 
-Diana Jacquelinne Soto Alcaraz Hola a todos, que tengan buen inicio de semestre :) Exito compañeros!!
+Diana Jacquelinne Soto Alcaraz Hola a todos buen inicio de semestre
 
 Juan Pablo Almada Burr
 
