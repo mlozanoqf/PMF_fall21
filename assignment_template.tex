@@ -1,12 +1,27 @@
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+
 \documentclass[12pt,halfline,a4paper,]{ouparticle}
 
 % Packages I think are necessary for basic Rmarkdown functionality
 \usepackage{hyperref}
 \usepackage{graphicx}
 \usepackage{listings}
-\usepackage{color}
+\usepackage{xcolor}
 \usepackage{fancyvrb}
 \usepackage{framed}
+
+% Link coloring
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Homework assignment title.}
+                        ,
+            colorlinks=true,
+            citecolor=blue,
+            urlcolor=blue,
+            linkcolor=blue
+            }
+
 
 % For knitr::kable functionality
 \usepackage{booktabs}
@@ -54,9 +69,38 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
 % For making Rmarkdown lists
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Macros for dealing with affiliations, footnotes, etc.
+\makeatletter
+\def\Newlabel#1#2#3{\expandafter\gdef\csname #1@#2\endcsname{#3}}
+
+\def\Ref#1#2{\@ifundefined{#1@#2}{???}{\csname #1@#2\endcsname}}
+
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}
+
+\newcommand*\ifcounter[1]{%
+  \ifcsname c@#1\endcsname
+    \expandafter\@firstoftwo
+  \else
+    \expandafter\@secondoftwo
+  \fi
+}
+
+\newcommand*\thanksbycode[1]{%
+  \ifcounter{FNCT@#1}
+    {\samethanks[\value{FNCT@#1}]}
+    {\thanks{\Ref{FN}{#1}}\newcounter{FNCT@#1}\setcounter{FNCT@#1}{\value{footnote}}}
+}
+
+% Create labels for Addresses if the are given in Elsevier format
+
+% Create labels for Footnotes if the are given in Elsevier format
 
 % Part for setting citation format package: natbib
 
@@ -73,7 +117,7 @@
   {}%
   {\par}
 % For Pandoc 2.11+
-\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
  {% don't indent paragraphs
   \setlength{\parindent}{0pt}
   % turn on hanging indent if param 1 is 1
@@ -87,7 +131,7 @@
 \usepackage{calc} % for calculating minipage widths
 \newcommand{\CSLBlock}[1]{#1\hfill\break}
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 % Pandoc header
 
@@ -96,6 +140,8 @@
 \title{\textbf{Homework assignment title.}}
 
 \author{%
+%
+% Code for old style authors field
 \name{Paco de Lucía}\address{778899}
 \and
 \name{Baby Yoda}\address{774455}
@@ -105,11 +151,17 @@
 \name{An alternative for big teams - Chick Corea (884422), Baby Yoda
 (774455), Paco de Lucía (778899), Suzanne Ciani (365411), Alan Turing
 (312511) and others.}
+%
+% Add \and if both authors and author
+%
+%
+% Code for new (elsevier) style author field
+%
 }
 
 \abstract{Summary of main findings and conclusions. Optional section.}
 
-\date{Last compiled on: 25/08/2021, 00:08:52.}
+\date{Last compiled on: 25/08/2021, 15:02:11.}
 
 \keywords{Optional section. quantitative finance; financial
 risk; financial modeling in R; Optional section.}
@@ -307,7 +359,7 @@ semestre
 
 Juan Pablo Almada Burr- Saludos a todos.
 
-Bernardo Amador Padilla
+Bernardo Amador Padilla - Hola, saludos.
 
 Christian Contreras Hernández - S.O.S.
 
@@ -315,15 +367,15 @@ Melanie Flores García - Hola Grupo
 
 Luis Fernando Rodríguez Parra HOla, saludos a todos
 
-Diego Valdés Contreras
+Diego Valdés Contreras - Hola:)
 
 María Fernanda Rendón Muro
 
-Eugenio Murillo Nader
+Eugenio Murillo Nader - Hola grupo!
 
 Adriana Beatriz Santos Monterroza
 
-Oscar David Cortés Gutiérrez
+Oscar David Cortés Gutiérrez - Hola, excelente semestre!
 
 Pompilio Rainiero Amador Sandoval
 
@@ -331,17 +383,17 @@ José Gonzalo Morones Intriago-Saludos!
 
 Andrea Newell Jasso
 
-María Julia Romero Rico
+María Julia Romero Rico - Holaa!!
 
 Claudia Michelle de los Ríos Arellano
 
-Salvador Adrián Sánchez Macías
+Salvador Adrián Sánchez Macías - hola a todos
 
 Enrique Gallegos Pateiro
 
-César Alejandro Marroquín Garibay
+César Alejandro Marroquín Garibay- hola todos.
 
-Natalia Azcárraga Kuri
+Natalia Azcárraga Kuri - llevo demasiados intentos, y no puedoooooo
 
 Cecilia Reyes Villarreal
 
@@ -394,7 +446,7 @@ Héctor Alejandro Faz Zepeda
 
 Adriana Sofía Salcido Berumen - ¡Saludos!
 
-Luis Arturo Payán Quiñones
+Luis Arturo Payán Quiñones- ¡HOLA!
 
 Daniela Pizano Chávez- Hola profe, saludos!!!
 
@@ -415,7 +467,7 @@ Jorge Andrés Ángeles Luévano - Saludos desde Chihuahua, Profesor!
 
 Andrés Amílkar Yáñez Frías
 
-Nicolai Reiners
+Nicolai Reiners - listo (por fin)\ldots{}
 
 Félix Muñoz Rodríguez
 
