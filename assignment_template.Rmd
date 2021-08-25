@@ -8,7 +8,7 @@ authors:
     address: 774455
   - name: Chick Corea
     address: 884422
-  - name: An alternative for big teams - Chick Corea (884422), Baby Yoda (774455), Paco de Lucía (778899), Suzanne Ciani (365411), Alan Turing (312511) and others. 
+  - name: Enrique Gallegos Pateiro 
 abstract: |
   Summary of main findings and conclusions. Optional section.
 keywords:
