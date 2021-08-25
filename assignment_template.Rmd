@@ -129,7 +129,7 @@ You can reference this table as follows: Table \ref{tab:tab2}.
 
 Diana Jacquelinne Soto Alcaraz Hola a todos, que tengan buen inicio de semestre
 
-Juan Pablo Almada Burr
+Juan Pablo Almada Burr- Saludos a todos.
 
 Bernardo Amador Padilla
 
