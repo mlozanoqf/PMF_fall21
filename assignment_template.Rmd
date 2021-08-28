@@ -263,10 +263,11 @@ Write your R code and results here, below the equation \ref{eq:eq3} and before t
 
 # Diana Jacquelinne Soto Alcaraz A00227348
 ```{r}
+x<-1
 equation1<-log(exp(1))+((sin(x)^2)+(cos(x)^2))
 equation1
 
-n<- (0:50000)
+n<- seq(0:50000)
 equation2 <- sum(1/2^n)
 equation2
 
