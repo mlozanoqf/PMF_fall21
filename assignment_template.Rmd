@@ -272,7 +272,9 @@ equation2 <- sum(1/2^n)
 equation2
 
 equation1>equation2
+
 ```
+
 
 
 # Conclusion.
