@@ -263,9 +263,7 @@ Write your R code and results here, below the equation \ref{eq:eq3} and before t
 
 # Diana Jacquelinne Soto Alcaraz A00227348
 ```{r}
-
-x<-1
-equation1<-log(exp(1))+((sin(1)^2)*x+(cos(1)^2)*x)
+equation1<-log(exp(1))+((sin(x)^2)+(cos(x)^2))
 equation1
 
 n<- (0:5000)
