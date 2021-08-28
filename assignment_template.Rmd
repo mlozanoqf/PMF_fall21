@@ -265,14 +265,14 @@ Write your R code and results here, below the equation \ref{eq:eq3} and before t
 ```{r}
 
 x<-1
-equation1<-log(exp(1))+((sin(1)^2)*x+(cos(1)^2)*x)
-equation1
+equation1.<-log(exp(1))+((sin(1)^2)*x+(cos(1)^2)*x)
+equation1.
 
 n<- (0:5000)
-equation2 <- sum(1/2^n)
-equation2
+equation2. <- sum(1/2^n)
+equation2.
 
-equation1>equation2
+equation1.>equation2.
 ```
 
 
