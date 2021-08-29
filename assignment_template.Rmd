@@ -261,6 +261,21 @@ ln(e)+(sin^2x+cos^2x) > \sum^{\infty}_{n=0}1/2^n
 
 Write your R code and results here, below the equation \ref{eq:eq3} and before the conclusion. Please include your name.
 
+# Diana Jacquelinne Soto Alcaraz A00227348
+```{r}
+x<-1
+equation1<-log(exp(1))+((sin(x)^2)+(cos(x)^2))
+equation1
+
+n<- seq(0:50000)
+equation2 <- sum(1/2^n)
+equation2
+
+equation1>equation2
+
+```
+
+
 
 # Conclusion.
 
