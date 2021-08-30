@@ -274,7 +274,24 @@ equation2
 equation1>equation2
 
 ```
+#Juan Pablo Almada Burr A00227349
 
+```{r}
+x<-1
+eq<- log(exp(x))+(sin(x)^2)+(cos(x)^2) 
+eq
+
+n<- seq_len(1000)
+eq3 <- sum(1/2^n)
+eq3
+
+
+is.it.true <- eq > eq3
+if(is.it.true == TRUE) {print ("Equation is true!")}
+if(is.it.true == FALSE) {print("Equation is false!")}
+
+
+```
 
 
 # Conclusion.
