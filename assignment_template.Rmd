@@ -64,6 +64,10 @@ w=\sum^{20}_{i=1}[1/n^i]
 This equation can be referenced as Eq. \ref{eq:eq2}.
 
 We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n^i]$.
+\
+
+**PMF group 3:00pm.** Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
+
 
 ## A subsection.
 
@@ -261,7 +265,8 @@ ln(e)+(sin^2x+cos^2x) > \sum^{\infty}_{n=0}1/2^n
 
 Write your R code and results here, below the equation \ref{eq:eq3} and before the conclusion. Please include your name.
 
-# Diana Jacquelinne Soto Alcaraz A00227348
+### Diana Jacquelinne Soto Alcaraz A00227348.
+
 ```{r}
 x<-1
 equation1<-log(exp(1))+((sin(x)^2)+(cos(x)^2))
@@ -274,7 +279,8 @@ equation2
 equation1>equation2
 
 ```
-#Juan Pablo Almada Burr A00227349
+
+### Juan Pablo Almada Burr A00227349.
 
 ```{r}
 x<-1
@@ -285,13 +291,12 @@ n<- seq_len(1000)
 eq3 <- sum(1/2^n)
 eq3
 
-
 is.it.true <- eq > eq3
 if(is.it.true == TRUE) {print ("Equation is true!")}
 if(is.it.true == FALSE) {print("Equation is false!")}
-
-
 ```
+
+**PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below.
 
 
 # Conclusion.
@@ -302,4 +307,3 @@ You can cross-reference sections and subsections as follows: Section \ref{method
 
 # References.
 
-*.html
