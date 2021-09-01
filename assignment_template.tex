@@ -109,7 +109,7 @@
 
 \abstract{Summary of main findings and conclusions. Optional section.}
 
-\date{Last compiled on: 25/08/2021, 00:08:52.}
+\date{Last compiled on: 01/09/2021, 11:30:30.}
 
 \keywords{Optional section. quantitative finance; financial
 risk; financial modeling in R; Optional section.}
@@ -169,7 +169,12 @@ w=\sum^{20}_{i=1}[1/n^i]
 This equation can be referenced as Eq. \ref{eq:eq2}.
 
 We can also write equations within the main text as here:
-\(w=\sum^{20}_{i=1}[1/n^i]\).
+\(w=\sum^{20}_{i=1}[1/n^i]\).\\
+
+\textbf{PMF group 3:00pm.} Assume \(n=0.9\), plot the values of \(w\)
+(y-axis) as a function of \(i\) (x-axis). Add your name as the plot
+title. Report your code in a code chunk below. Hint: you need to use the
+\texttt{cumsum()} function.
 
 \hypertarget{a-subsection.}{%
 \subsection{A subsection.}\label{a-subsection.}}
@@ -307,7 +312,7 @@ semestre
 
 Juan Pablo Almada Burr- Saludos a todos.
 
-Bernardo Amador Padilla
+Bernardo Amador Padilla - Hola, saludos.
 
 Christian Contreras Hernández - S.O.S.
 
@@ -315,15 +320,15 @@ Melanie Flores García - Hola Grupo
 
 Luis Fernando Rodríguez Parra HOla, saludos a todos
 
-Diego Valdés Contreras
+Diego Valdés Contreras - Hola:)
 
 María Fernanda Rendón Muro
 
-Eugenio Murillo Nader
+Eugenio Murillo Nader - Hola grupo!
 
 Adriana Beatriz Santos Monterroza
 
-Oscar David Cortés Gutiérrez
+Oscar David Cortés Gutiérrez - Hola, excelente semestre!
 
 Pompilio Rainiero Amador Sandoval
 
@@ -331,17 +336,17 @@ José Gonzalo Morones Intriago-Saludos!
 
 Andrea Newell Jasso
 
-María Julia Romero Rico
+María Julia Romero Rico - Holaa!!
 
 Claudia Michelle de los Ríos Arellano
 
-Salvador Adrián Sánchez Macías
+Salvador Adrián Sánchez Macías - hola a todos
 
 Enrique Gallegos Pateiro
 
-César Alejandro Marroquín Garibay
+César Alejandro Marroquín Garibay- hola todos.
 
-Natalia Azcárraga Kuri
+Natalia Azcárraga Kuri - llevo demasiados intentos, y no puedoooooo
 
 Cecilia Reyes Villarreal
 
@@ -355,7 +360,7 @@ Karina Albarrán Herrera - Hola a todos, buen inicio de semestre.
 
 César Jacob Linares Murguia
 
-Edgar Fernández Reynaga
+Edgar Fernández Reynaga - Hola a todos.
 
 Marianne Obele Coll
 
@@ -415,7 +420,7 @@ Jorge Andrés Ángeles Luévano - Saludos desde Chihuahua, Profesor!
 
 Andrés Amílkar Yáñez Frías
 
-Nicolai Reiners
+Nicolai Reiners - listo (por fin)\ldots{}
 
 Félix Muñoz Rodríguez
 
@@ -438,6 +443,93 @@ ln(e)+(sin^2x+cos^2x) > \sum^{\infty}_{n=0}1/2^n
 Write your R code and results here, below the equation \ref{eq:eq3} and
 before the conclusion. Please include your name.
 
+\hypertarget{diana-jacquelinne-soto-alcaraz-a00227348.}{%
+\subsubsection{Diana Jacquelinne Soto Alcaraz
+A00227348.}\label{diana-jacquelinne-soto-alcaraz-a00227348.}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{\textless{}{-}}\DecValTok{1}
+\NormalTok{equation1}\OtherTok{\textless{}{-}}\FunctionTok{log}\NormalTok{(}\FunctionTok{exp}\NormalTok{(}\DecValTok{1}\NormalTok{))}\SpecialCharTok{+}\NormalTok{((}\FunctionTok{sin}\NormalTok{(x)}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{)}\SpecialCharTok{+}\NormalTok{(}\FunctionTok{cos}\NormalTok{(x)}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{))}
+\NormalTok{equation1}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{n}\OtherTok{\textless{}{-}} \FunctionTok{seq}\NormalTok{(}\DecValTok{0}\SpecialCharTok{:}\DecValTok{50000}\NormalTok{)}
+\NormalTok{equation2 }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(}\DecValTok{1}\SpecialCharTok{/}\DecValTok{2}\SpecialCharTok{\^{}}\NormalTok{n)}
+\NormalTok{equation2}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{equation1}\SpecialCharTok{\textgreater{}}\NormalTok{equation2}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] TRUE
+\end{verbatim}
+
+\hypertarget{juan-pablo-almada-burr-a00227349.}{%
+\subsubsection{Juan Pablo Almada Burr
+A00227349.}\label{juan-pablo-almada-burr-a00227349.}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{x}\OtherTok{\textless{}{-}}\DecValTok{1}
+\NormalTok{eq}\OtherTok{\textless{}{-}} \FunctionTok{log}\NormalTok{(}\FunctionTok{exp}\NormalTok{(x))}\SpecialCharTok{+}\NormalTok{(}\FunctionTok{sin}\NormalTok{(x)}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{)}\SpecialCharTok{+}\NormalTok{(}\FunctionTok{cos}\NormalTok{(x)}\SpecialCharTok{\^{}}\DecValTok{2}\NormalTok{) }
+\NormalTok{eq}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 2
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{n}\OtherTok{\textless{}{-}} \FunctionTok{seq\_len}\NormalTok{(}\DecValTok{1000}\NormalTok{)}
+\NormalTok{eq3 }\OtherTok{\textless{}{-}} \FunctionTok{sum}\NormalTok{(}\DecValTok{1}\SpecialCharTok{/}\DecValTok{2}\SpecialCharTok{\^{}}\NormalTok{n)}
+\NormalTok{eq3}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{is.it.true }\OtherTok{\textless{}{-}}\NormalTok{ eq }\SpecialCharTok{\textgreater{}}\NormalTok{ eq3}
+\ControlFlowTok{if}\NormalTok{(is.it.true }\SpecialCharTok{==} \ConstantTok{TRUE}\NormalTok{) \{}\FunctionTok{print}\NormalTok{ (}\StringTok{"Equation is true!"}\NormalTok{)\}}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] "Equation is true!"
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\ControlFlowTok{if}\NormalTok{(is.it.true }\SpecialCharTok{==} \ConstantTok{FALSE}\NormalTok{) \{}\FunctionTok{print}\NormalTok{(}\StringTok{"Equation is false!"}\NormalTok{)\}}
+\end{Highlighting}
+\end{Shaded}
+
+\textbf{PMF group 6:00pm.} Plot \(y=log(x)\), where
+\(x=0.1, 0.2, 0.3,...,5\). Add your name as the plot title. Report your
+code in a code chunk below.
+
 \hypertarget{conclusion.}{%
 \section{Conclusion.}\label{conclusion.}}
 
@@ -448,9 +540,8 @@ You can cross-reference sections and subsections as follows: Section
 the section title for the bibliography.
 
 \hypertarget{references.}{%
-\section{References.}\label{references.}}
-
-*.html
+\section*{References.}\label{references.}}
+\addcontentsline{toc}{section}{References.}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
