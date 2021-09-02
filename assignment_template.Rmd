@@ -329,22 +329,7 @@ if(is.it.true == TRUE) {print ("Equation is true!")}
 if(is.it.true == FALSE) {print("Equation is false!")}
 ```
 
-**PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below...
-
-
-# Diana Jacquelinne Soto Alcaraz A00227348
-```{r}
-
-x<-1
-equation1.<-log(exp(1))+((sin(1)^2)*x+(cos(1)^2)*x)
-equation1.
-
-n<- (0:5000)
-equation2. <- sum(1/2^n)
-equation2.
-
-equation1.>equation2.
-```
+**PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below.
 
 
 
