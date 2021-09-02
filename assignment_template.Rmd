@@ -67,6 +67,37 @@ We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n
 
 ## A subsection.
 
+
+This equation can be referenced as follows: Eq. \ref{eq:eq1}. Now a simpler equation:
+
+{=tex}
+\begin{equation}\label{eq:eq2}
+w=\sum^{20}_{i=1}[1/n^i]
+\end{equation}
+
+
+This equation can be referenced as Eq. \ref{eq:eq2}.
+
+We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n^i]$.
+\
+
+*PMF group 3:00pm.* Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
+
+
+```{r}
+#Diana Jacquelinne Soto A00227348
+#w=sum^{20}_{i=1}[1/0.9^i]
+           
+n=0.9
+x<- (1:20)
+y <- (1/n^x)
+cumsum(y)
+z=sum(y)
+z
+
+plot(x, y)
+```
+
 A numbered list:
 
 1)  First numbered point
