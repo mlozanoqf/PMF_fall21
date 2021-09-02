@@ -64,6 +64,10 @@ w=\sum^{20}_{i=1}[1/n^i]
 This equation can be referenced as Eq. \ref{eq:eq2}.
 
 We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n^i]$.
+\
+
+**PMF group 3:00pm.** Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
+
 
 
 **PMF group 3:00pm.** Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
@@ -170,17 +174,17 @@ José Gonzalo Morones Intriago-Saludos!
 
 Andrea Newell Jasso
 
-María Julia Romero Rico
+María Julia Romero Rico - Holaa!!
 
 Claudia Michelle de los Ríos Arellano
 
-Salvador Adrián Sánchez Macías
+Salvador Adrián Sánchez Macías - hola a todos
 
 Enrique Gallegos Pateiro
 
-César Alejandro Marroquín Garibay
+César Alejandro Marroquín Garibay- hola todos.
 
-Natalia Azcárraga Kuri
+Natalia Azcárraga Kuri - llevo demasiados intentos, y no puedoooooo
 
 Cecilia Reyes Villarreal
 
@@ -194,7 +198,7 @@ Karina Albarrán Herrera - Hola a todos, buen inicio de semestre.
 
 César Jacob Linares Murguia
 
-Edgar Fernández Reynaga
+Edgar Fernández Reynaga - Hola a todos. 
 
 Marianne Obele Coll
 
@@ -253,7 +257,7 @@ Jorge Andrés Ángeles Luévano - Saludos desde Chihuahua, Profesor!
 
 Andrés Amílkar Yáñez Frías
 
-Nicolai Reiners 
+Nicolai Reiners - listo (por fin)...
 
 Félix Muñoz Rodríguez
 
@@ -276,6 +280,39 @@ ln(e)+(sin^2x+cos^2x) > \sum^{\infty}_{n=0}1/2^n
 
 Write your R code and results here, below the equation \ref{eq:eq3} and before the conclusion. Please include your name.
 
+### Diana Jacquelinne Soto Alcaraz A00227348.
+
+```{r}
+x<-1
+equation1<-log(exp(1))+((sin(x)^2)+(cos(x)^2))
+equation1
+
+n<- seq(0:50000)
+equation2 <- sum(1/2^n)
+equation2
+
+equation1>equation2
+
+```
+
+### Juan Pablo Almada Burr A00227349.
+
+```{r}
+x<-1
+eq<- log(exp(x))+(sin(x)^2)+(cos(x)^2) 
+eq
+
+n<- seq_len(1000)
+eq3 <- sum(1/2^n)
+eq3
+
+is.it.true <- eq > eq3
+if(is.it.true == TRUE) {print ("Equation is true!")}
+if(is.it.true == FALSE) {print("Equation is false!")}
+```
+
+**PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below.
+
 
 # Conclusion.
 
@@ -285,4 +322,3 @@ You can cross-reference sections and subsections as follows: Section \ref{method
 
 # References.
 
-*.html
