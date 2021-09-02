@@ -65,6 +65,21 @@ This equation can be referenced as Eq. \ref{eq:eq2}.
 
 We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n^i]$.
 
+
+**PMF group 3:00pm.** Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
+
+``` {r}
+n<-0.9
+i<-(1:20)
+w<-(1/n^i)
+
+cumsum (w)
+
+plot(cumsum(w), xlab= "i", ylab = "w")
+
+title ("Bernardo Amador Padilla")
+``` {}
+
 ## A subsection.
 
 A numbered list:
@@ -131,7 +146,7 @@ Diana Jacquelinne Soto Alcaraz Hola a todos, que tengan buen inicio de semestre
 
 Juan Pablo Almada Burr- Saludos a todos.
 
-Bernardo Amador Padilla - Hola, saludos.
+Bernardo Amador Padilla - Hola, saludos..
 
 Christian Contreras Hernández - S.O.S.
 
