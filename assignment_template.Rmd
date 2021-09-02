@@ -67,6 +67,13 @@ We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n
 \
 
 **PMF group 3:00pm.** Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
+n <-0.9
+i <- (1:20)
+    1/n^i
+cumsum (i)
+w <- 1/n^i
+plot(i, w,
+    main = "Karina Albarrán")
 
 
 ## A subsection.
