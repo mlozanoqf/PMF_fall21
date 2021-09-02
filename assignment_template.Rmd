@@ -70,7 +70,7 @@ We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n
 x<- c(1:10)
 csx<-cumsum(x)
 csx
-plot(x=1:10, y= 1/0.9^csx, main= "ANDREA NEWELL J", xlab= "i", ylab= "w")
+plot(x=1:10, y= 1/0.9^csx, main= "ANDREA NEWELL ", xlab= "i", ylab= "w")
 
 
 ## A subsection.
