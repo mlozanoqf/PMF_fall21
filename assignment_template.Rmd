@@ -76,8 +76,8 @@ i <- (1:20)
 w <- (1/n^i)
 
 plot(i, cumsum(w),
-     main = "Eugenio Murillo Náder")
-
+     main = "Eugenio Murillo Nader")
+```
 
 
 
