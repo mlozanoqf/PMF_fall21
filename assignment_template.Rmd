@@ -72,12 +72,50 @@ We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n
 n <- 0.9
 i <- (1:20)
 w <- (1/n^i)
-
 plot(i, cumsum(w),
      main = "Diego Valdes Contreras")
 ```
 
+```{r}
+n <- 0.9
+i <- (1:20)
+w <- (1/n^i)
+plot(i, cumsum(w), 
+     main = "Medardo Chávez Aguilar")
+```
+
 ## A subsection.
+
+
+This equation can be referenced as follows: Eq. \ref{eq:eq1}. Now a simpler equation:
+
+{=tex}
+\begin{equation}\label{eq:eq2}
+w=\sum^{20}_{i=1}[1/n^i]
+\end{equation}
+
+
+This equation can be referenced as Eq. \ref{eq:eq2}.
+
+We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n^i]$.
+\
+
+*PMF group 3:00pm.* Assume $n=0.9$, plot the values of $w$ (y-axis) as a function of $i$ (x-axis). Add your name as the plot title. Report your code in a code chunk below. Hint: you need to use the `cumsum()` function.
+
+
+```{r}
+#Diana Jacquelinne Soto A00227348
+#w=sum^{20}_{i=1}[1/0.9^i]
+           
+n=0.9
+x<- (1:20)
+y <- (1/n^x)
+cumsum(y)
+z=sum(y)
+z
+
+plot(x, y)
+```
 
 A numbered list:
 
@@ -140,6 +178,7 @@ You can reference this table as follows: Table \ref{tab:tab2}.
 ## Grupo 3:00pm.
 
 Diana Jacquelinne Soto Alcaraz Hola a todos, que tengan buen inicio de semestre
+
 
 Juan Pablo Almada Burr- Saludos a todos.
 
@@ -273,6 +312,7 @@ ln(e)+(sin^2x+cos^2x) > \sum^{\infty}_{n=0}1/2^n
 
 Write your R code and results here, below the equation \ref{eq:eq3} and before the conclusion. Please include your name.
 
+
 ### Diana Jacquelinne Soto Alcaraz A00227348.
 
 ```{r}
@@ -305,6 +345,7 @@ if(is.it.true == FALSE) {print("Equation is false!")}
 ```
 
 **PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below.
+
 
 
 # Conclusion.
