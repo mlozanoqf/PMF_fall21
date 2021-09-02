@@ -329,7 +329,7 @@ if(is.it.true == TRUE) {print ("Equation is true!")}
 if(is.it.true == FALSE) {print("Equation is false!")}
 ```
 
-**PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below.
+**PMF group 6:00pm.** Plot $y=log(x)$, where $x=0.1, 0.2, 0.3,...,5$. Add your name as the plot title. Report your code in a code chunk below...
 
 
 # Diana Jacquelinne Soto Alcaraz A00227348
