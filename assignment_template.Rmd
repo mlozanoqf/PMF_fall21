@@ -71,7 +71,7 @@ We can also write equations within the main text as here: $w=\sum^{20}_{i=1}[1/n
 ```{r}
 n<-.9
 i<-c(1:30)
-w<-1.1*n^i
+w<-1*n^i
 cumsum(i)
 plot(i,w)
 ```
