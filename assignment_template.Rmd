@@ -84,6 +84,14 @@ plot(i, cumsum(w),
      main = "Medardo Chávez Aguilar")
 ```
 
+```{r}
+n <- 0.9
+i <- (1:20)
+w <- (1/n^i)
+plot(i, cumsum(w),
+     main = "Luis Rodríguez A00820466")
+```
+
 ## A subsection.
 
 
